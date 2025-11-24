@@ -41,6 +41,9 @@ info:
     url: http://creativecommons.org/licenses/by/3.0/
   title: GeoDB Cities API
   version: 1.0.0
+  x-logo:
+    url: http://geodb-cities-api.wirefreethought.com/assets/images/logo.png
+    backgroundColor: "#FFFFFF"
 servers:
 - url: https://wft-geo-db.p.rapidapi.com/v1
 security:
