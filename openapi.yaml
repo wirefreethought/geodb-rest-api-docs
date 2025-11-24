@@ -42,7 +42,7 @@ info:
   title: GeoDB Cities API
   version: 1.0.0
   x-logo:
-    url: https://geodb-cities-api.wirefreethought.com/assets/images/logo.png
+    url: logo.png
     backgroundColor: "#FFFFFF"
 servers:
 - url: https://wft-geo-db.p.rapidapi.com/v1
