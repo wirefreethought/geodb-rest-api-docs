@@ -1,5 +1,8 @@
 openapi: 3.0.1
+
 info:
+  title: GeoDB Cities API
+
   description: |
     The GeoDB API focuses on getting global places and regions. Easily obtain country, region, and place data for use in your apps!
 
@@ -36,23 +39,29 @@ info:
     #### Documentation & License
     - [Swagger Docs](swagger.json)
     - [Usage License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
+
   license:
     name: Creative Commons Attribution 3.0
     url: http://creativecommons.org/licenses/by/3.0/
-  title: GeoDB Cities API
+
   version: 1.0.0
+
   x-logo:
     url: logo.png
     backgroundColor: "#FFFFFF"
+
 servers:
 - url: https://wft-geo-db.p.rapidapi.com/v1
+
 security:
 - UserSecurity: []
+
 tags:
-- description: Geo Endpoints
-  name: Geo
-- description: Locale Endpoints
-  name: Locale
+- name: Geo
+  description: Geo Endpoints
+- name: Locale
+  description: Locale Endpoints
+
 paths:
   /geo/adminDivisions:
     get:
@@ -5033,9 +5042,9 @@ components:
         - code: ENTITY_NOT_FOUND
           message: "Param [someParam] has invalid value: invalidValue"
       title: Not Found Response
+
   securitySchemes:
     UserSecurity:
       in: header
       name: X-RapidAPI-Key
       type: apiKey
-x-original-swagger-version: "2.0"
